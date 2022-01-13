@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>5 letter words</title>
+        <h1>5 LETTER WORD FINDER</h1>
+        <script src="solver.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>This programs suggets random 5 letter word from a database depending on restrictions</p>
+        <table class="inputs">
+            <tbody>
+                <tr>
+                    <th>Unused Letters</th>
+                    <th>Used Letters </th>
+                </tr>
+                <tr>
+                    <p>Use comma to seperate letters</p>
+                    <td>
+                        <input type="text" name="unused" id="unused">
+                    </td>
+                    <td>
+                        <input type="text" name="used" id="used">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="findWords()">Find words</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p id="result"></p>
+    </body>
+</html>
