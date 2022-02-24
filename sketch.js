@@ -2,7 +2,7 @@ let bird;
 let pipes = []
 let gameState = true
 let gameSpeed = 50     
-let score = 103
+let score = 0
 
 function preload(){
     birdImg = loadImage("diltas1.png")
@@ -34,7 +34,7 @@ function setup() {
       }
     }
     
-    //score = Math.round(bird.fitness / 60)
+    score = Math.round(bird.fitness / 60)
     fill(0, 102, 153);
     text(str(score) + " saniye" ,width/2, 50)
     bird.update();
