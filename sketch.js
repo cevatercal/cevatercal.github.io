@@ -51,6 +51,7 @@ function setup() {
       text(str(score) + " saniye" ,width/2, height / 2)
       let id = makeid();
       text(id ,width/2, (height / 2)+50)
+      text("World Record: Ömer Amir Akdağ 106 second", width/2,(height/2)+100)
       noLoop();
   }
 }
